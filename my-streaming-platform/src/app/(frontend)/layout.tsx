@@ -1,3 +1,4 @@
+import { ClerkProvider } from '@clerk/nextjs'
 import React from 'react'
 import './styles.css'
 
@@ -12,7 +13,9 @@ export default async function RootLayout(props: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body>
-        <main>{children}</main>
+        <ClerkProvider>
+          <main>{children}</main>
+        </ClerkProvider>
       </body>
     </html>
   )

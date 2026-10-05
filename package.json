@@ -1,0 +1,12 @@
+{
+  "name": "my-streaming-project",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@12.9.1",
+  "scripts": {
+    "dev:platform": "pnpm --filter my-streaming-platform dev",
+    "dev:worker": "pnpm --filter cf-worker dev",
+    "build": "pnpm --recursive run build",
+    "lint": "pnpm --recursive run lint"
+  }
+}
